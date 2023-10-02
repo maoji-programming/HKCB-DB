@@ -49,8 +49,8 @@ module.exports = {
             }
         })
         app.use("/",router);
-        app.listen(3004, () => {
-            console.log("listen on port 3004")
+        app.listen(process.env.PORT || 3004, () => {
+            console.log("listening")
         })
     })
 }}
