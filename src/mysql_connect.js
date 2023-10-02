@@ -75,8 +75,8 @@ module.exports = {
 
         app.use("/",router);
 
-        app.listen(443, () => {
-            console.log("listen on port 443")
+        app.listen(process.env.PORT || 3004, () => {
+            console.log("listening")
         })
     }
 }
